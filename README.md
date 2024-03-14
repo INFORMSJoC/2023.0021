@@ -22,7 +22,7 @@ https://doi.org/10.1287/ijoc.2023.0021.cd
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@article{CacheTest,
+@article{testCostMinimization,
   author =        {B. Caskurlu, K. Submrani, U.U. Acikalin, A. Velasquez and P. Wojciechowski},
   publisher =     {INFORMS Journal on Computing},
   title =         {{Models for test cost minimization in database migration}},
