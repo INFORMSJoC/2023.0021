@@ -1,0 +1,60 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 30 substitutions.
+Reduced MIP has 139 rows, 180 columns, and 632 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,59 ticks)
+Found incumbent of value 2080,000000 after 0,00 sec. (1,15 ticks)
+Probing time = 0,00 sec. (0,20 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 40 rows and 0 columns.
+MIP Presolve added 80 rows and 0 columns.
+Reduced MIP has 179 rows, 180 columns, and 672 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,75 ticks)
+Probing time = 0,00 sec. (0,19 ticks)
+Clique table members: 407.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,99 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2080,0000        0,0000           100,00%
+*     0+    0                         1233,0000        0,0000           100,00%
+      0     0      520,0000   135     1233,0000      520,0000      120   57,83%
+      0     0      521,5636   135     1233,0000      Cuts: 61      174   57,70%
+      0     0      530,7989   135     1233,0000      Cuts: 86      220   56,95%
+      0     0      535,4029   135     1233,0000     Cuts: 105      254   56,58%
+      0     0      535,6926   135     1233,0000      Cuts: 53      262   56,55%
+      0     0      536,2889   135     1233,0000      Cuts: 46      270   56,51%
+*     0+    0                         1228,0000      536,2889            56,33%
+*     0+    0                         1138,0000      536,2889            52,87%
+      0     2      536,2889   180     1138,0000      536,2889      270   52,87%
+Elapsed time = 0,16 sec. (42,43 ticks, tree = 0,02 MB, solutions = 4)
+*    36+    2                         1123,0000      541,9392            51,74%
+*   806   430      integral     0     1105,0000      709,8450    13739   35,76%
+*  1350   706      integral     0     1095,0000      843,6360    25363   22,96%
+*  1783+  782                         1089,0000      864,0010            20,66%
+*  4292   642      integral     0     1086,0000     1041,6592    98994    4,08%
+*  4500   413      integral     0     1079,0000     1058,3667   102024    1,91%
+
+Clique cuts applied:  16
+Cover cuts applied:  190
+Flow cuts applied:  9
+Mixed integer rounding cuts applied:  63
+Zero-half cuts applied:  10
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0,15 sec. (42,18 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0,33 sec. (172,06 ticks)
+  Sync time (average)   =    0,14 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,48 sec. (214,24 ticks)

@@ -1,0 +1,78 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 30 substitutions.
+Reduced MIP has 139 rows, 180 columns, and 652 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,60 ticks)
+Found incumbent of value 120,000000 after 0,00 sec. (1,20 ticks)
+Probing time = 0,00 sec. (0,20 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 32 rows and 0 columns.
+MIP Presolve added 64 rows and 0 columns.
+Reduced MIP has 171 rows, 180 columns, and 684 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,74 ticks)
+Probing time = 0,00 sec. (0,20 ticks)
+Clique table members: 427.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,55 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          120,0000        0,0000           100,00%
+*     0+    0                           70,0000        0,0000           100,00%
+*     0+    0                           69,0000        0,0000           100,00%
+      0     0       30,0000   113       69,0000       30,0000       72   56,52%
+      0     0       30,0000   113       69,0000     Cuts: 143      120   56,52%
+      0     0       30,0000   113       69,0000      Cuts: 95      177   56,52%
+*     0+    0                           68,0000       30,0000            55,88%
+*     0+    0                           64,0000       30,0000            53,12%
+*     0+    0                           58,0000       30,0000            48,28%
+      0     2       30,0000   123       58,0000       30,0000      177   48,28%
+Elapsed time = 0,06 sec. (26,13 ticks, tree = 0,02 MB, solutions = 6)
+   5042  2545       56,0222    44       58,0000       40,1598    61451   30,76%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 171 rows, 180 columns, and 684 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,38 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 171 rows, 180 columns, and 684 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,52 ticks)
+Represolve time = 0,01 sec. (4,07 ticks)
+   5045     0       30,8252   135       58,0000      Fract: 5    78268   25,88%
+   5045     0       31,3225   135       58,0000      Fract: 4    78297   25,88%
+   5045     0       31,8431   135       58,0000       Cuts: 8    78346   25,88%
+   5045     0       32,3771   135       58,0000      Fract: 7    78381   25,88%
+   6117   596       37,3677   165       58,0000       42,9867    99860   25,88%
+  10115  3324       49,0529   139       58,0000       42,9867   182228   25,88%
+  14432  6029       50,4641   120       58,0000       45,8686   271326   20,92%
+  18442  7867       51,5299   130       58,0000       47,9077   365573   17,40%
+  22510  9209       56,0570   106       58,0000       49,1692   470218   15,23%
+  26760  9926       56,4765    99       58,0000       50,1820   550681   13,48%
+  30762 10188        cutoff             58,0000       51,1609   656536   11,79%
+  34488  9325        cutoff             58,0000       52,5727   753390    9,36%
+
+Clique cuts applied:  32
+Cover cuts applied:  356
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  24
+
+Root node processing (before b&c):
+  Real time             =    0,06 sec. (26,04 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    4,00 sec. (2660,57 ticks)
+  Sync time (average)   =    1,31 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    4,06 sec. (2686,61 ticks)

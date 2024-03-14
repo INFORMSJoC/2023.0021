@@ -1,0 +1,78 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 40 substitutions.
+Reduced MIP has 184 rows, 240 columns, and 896 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,84 ticks)
+Found incumbent of value 836,000000 after 0,00 sec. (1,47 ticks)
+Probing time = 0,00 sec. (0,29 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 32 rows and 0 columns.
+MIP Presolve added 64 rows and 0 columns.
+Reduced MIP has 216 rows, 240 columns, and 928 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,02 ticks)
+Probing time = 0,00 sec. (0,28 ticks)
+Clique table members: 596.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,48 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          836,0000        0,0000           100,00%
+*     0+    0                          486,0000        0,0000           100,00%
+*     0+    0                          474,0000        0,0000           100,00%
+*     0+    0                          445,0000        0,0000           100,00%
+      0     0      209,0000    89      445,0000      209,0000       58   53,03%
+      0     0      209,0000    89      445,0000     Cuts: 154      141   53,03%
+      0     0      209,0000    89      445,0000      Cuts: 46      180   53,03%
+*     0+    0                          418,0000      209,0000            50,00%
+      0     0      209,0000    89      418,0000     Cuts: 154      254   50,00%
+*     0+    0                          360,0000      209,0000            41,94%
+      0     2      209,0000   122      360,0000      212,7500      254   40,90%
+Elapsed time = 0,09 sec. (29,56 ticks, tree = 0,02 MB, solutions = 6)
+   2261  1441        cutoff            360,0000      260,2387    50107   27,71%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 216 rows, 240 columns, and 928 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,53 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 216 rows, 240 columns, and 928 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,72 ticks)
+Represolve time = 0,01 sec. (4,48 ticks)
+   4494     0      211,7280   240      360,0000       Cuts: 6   139728   17,87%
+   4494     0      213,8219   240      360,0000       Cuts: 6   139767   17,87%
+   4494     0      217,5472   240      360,0000       Cuts: 5   139823   17,87%
+   4494     0      219,7024   240      360,0000       Cuts: 7   139901   17,87%
+   4494     0      221,7609   240      360,0000      Fract: 6   139965   17,87%
+   4494     2      221,7609   238      360,0000      295,6543   139965   17,87%
+   5497   628      357,3710   151      360,0000      295,6543   165546   17,87%
+   7192  1695      341,4791   187      360,0000      295,6543   249715   17,87%
+   8998  2355        cutoff            360,0000      303,9243   344131   15,58%
+  10933  2684        cutoff            360,0000      317,5707   436933   11,79%
+  13218  2530        cutoff            360,0000      333,1611   567353    7,46%
+
+Clique cuts applied:  68
+Cover cuts applied:  423
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  7
+Gomory fractional cuts applied:  33
+
+Root node processing (before b&c):
+  Real time             =    0,07 sec. (29,46 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    2,87 sec. (1994,88 ticks)
+  Sync time (average)   =    0,90 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    2,94 sec. (2024,34 ticks)

@@ -1,0 +1,80 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 40 substitutions.
+Reduced MIP has 184 rows, 240 columns, and 904 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,83 ticks)
+Found incumbent of value 972,000000 after 0,00 sec. (1,65 ticks)
+Probing time = 0,00 sec. (0,29 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 40 rows and 0 columns.
+MIP Presolve added 80 rows and 0 columns.
+Reduced MIP has 224 rows, 240 columns, and 944 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,14 ticks)
+Probing time = 0,00 sec. (0,28 ticks)
+Clique table members: 604.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,78 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          972,0000        0,0000           100,00%
+*     0+    0                          503,0000        0,0000           100,00%
+*     0+    0                          489,0000        0,0000           100,00%
+      0     0      243,0000   131      489,0000      243,0000      102   50,31%
+      0     0      243,0000   131      489,0000     Cuts: 156      180   50,31%
+      0     0      243,0000   131      489,0000     Cuts: 152      242   50,31%
+      0     0      243,0000   131      489,0000     Cuts: 156      353   50,31%
+*     0+    0                          453,0000      243,0000            46,36%
+      0     2      274,0026   143      453,0000      269,3485      464   40,54%
+Elapsed time = 0,11 sec. (46,33 ticks, tree = 0,02 MB, solutions = 4)
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 24 rows and 16 columns.
+MIP Presolve added 6 rows and 0 columns.
+MIP Presolve modified 27 coefficients.
+Aggregator did 6 substitutions.
+Reduced MIP has 200 rows, 218 columns, and 826 nonzeros.
+Reduced MIP has 218 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,00 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 200 rows, 218 columns, and 826 nonzeros.
+Reduced MIP has 218 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,64 ticks)
+Represolve time = 0,01 sec. (4,92 ticks)
+   4684     0      315,3194   218      453,0000       Cuts: 7    99220   16,39%
+   4684     0      317,3661   218      453,0000      Cuts: 10    99260   16,39%
+   4684     0      318,7828   218      453,0000       Cuts: 9    99284   16,39%
+   4684     0      320,8896   218      453,0000      Cuts: 11    99322   16,39%
+   4684     0      322,2144   218      453,0000      Cuts: 10    99350   16,39%
+   4684     2      322,2144   215      453,0000      378,7626    99350   16,39%
+   5005   107      440,6484   167      453,0000      378,7626   105602   16,39%
+   6689  1123        cutoff            453,0000      383,1213   185659   15,43%
+   8832  2029      449,4817   162      453,0000      406,4053   298095   10,29%
+  11241  2263      442,2198   135      453,0000      421,3283   397059    6,99%
+* 12863+ 2113                          449,0000      430,1027             4,21%
+  14628   596      445,3902   107      449,0000      443,6790   515855    1,19%
+
+Clique cuts applied:  81
+Cover cuts applied:  388
+Mixed integer rounding cuts applied:  11
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  23
+
+Root node processing (before b&c):
+  Real time             =    0,11 sec. (46,20 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    1,97 sec. (1559,08 ticks)
+  Sync time (average)   =    0,54 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    2,08 sec. (1605,28 ticks)

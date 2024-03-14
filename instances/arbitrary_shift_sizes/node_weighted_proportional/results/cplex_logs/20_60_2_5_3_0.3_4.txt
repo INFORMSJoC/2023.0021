@@ -1,0 +1,78 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 60 substitutions.
+Reduced MIP has 203 rows, 240 columns, and 942 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,89 ticks)
+Found incumbent of value 2961,000000 after 0,00 sec. (1,59 ticks)
+Probing time = 0,00 sec. (0,34 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 39 rows and 0 columns.
+MIP Presolve added 78 rows and 0 columns.
+Reduced MIP has 242 rows, 240 columns, and 981 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,12 ticks)
+Probing time = 0,00 sec. (0,33 ticks)
+Clique table members: 662.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,67 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2961,0000        0,0000           100,00%
+*     0+    0                         1832,0000        0,0000           100,00%
+      0     0      987,0000   108     1832,0000      987,0000       83   46,12%
+      0     0      987,0000   108     1832,0000     Cuts: 160      118   46,12%
+      0     0      987,0000   108     1832,0000     Cuts: 160      197   46,12%
+*     0+    0                         1800,0000      987,0000            45,17%
+*     0+    0                         1754,0000      987,0000            43,73%
+*     0+    0                         1721,0000      987,0000            42,65%
+      0     2      987,0000    98     1721,0000      987,0000      197   42,65%
+Elapsed time = 0,10 sec. (30,99 ticks, tree = 0,02 MB, solutions = 5)
+*  1261+  735                         1714,0000     1206,0537            29,64%
+*  1520+  885                         1672,0000     1247,1419            25,41%
+*  2081+ 1141                         1645,0000     1261,5362            23,31%
+   4184  1782     1601,9737    83     1645,0000     1442,4839   123352   12,31%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 242 rows, 240 columns, and 981 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (5,40 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 242 rows, 240 columns, and 981 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (5,62 ticks)
+Represolve time = 0,02 sec. (16,08 ticks)
+   6278     0      988,5732   160     1645,0000       Cuts: 4   211402    5,71%
+   6278     0      996,7051   160     1645,0000      Cuts: 25   211446    5,71%
+   6278     0     1006,1929   160     1645,0000       Cuts: 9   211503    5,71%
+   6278     0     1011,9741   160     1645,0000       Cuts: 5   211528    5,71%
+   6278     2     1011,9741   240     1645,0000     1551,1488   211528    5,71%
+   6698    49     1348,4379   170     1645,0000     1551,1488   215850    5,71%
+   8234  1081     1371,7783   209     1645,0000     1551,1488   305933    5,71%
+  10214  1828     1609,7823   129     1645,0000     1551,1488   374285    5,71%
+  12432  2318     1624,2926    53     1645,0000     1551,1488   450844    5,71%
+  14915  1519        cutoff           1645,0000     1589,8622   523810    3,35%
+
+Clique cuts applied:  56
+Cover cuts applied:  481
+Mixed integer rounding cuts applied:  4
+Zero-half cuts applied:  10
+Gomory fractional cuts applied:  24
+
+Root node processing (before b&c):
+  Real time             =    0,09 sec. (30,89 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    2,58 sec. (1795,78 ticks)
+  Sync time (average)   =    0,91 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    2,67 sec. (1826,66 ticks)

@@ -1,20 +1,15 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Models for test cost minimization in database migration
 
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+[Models for test cost minimization in database migration](https://doi.org/10.1287/ijoc.2019.0000) by B. Caskurlu, K. Submrani, U.U. Acikalin, A. Velasquez and P. Wojciechowski. 
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+The repository contains implementations of adaptions of the heuristic algorithms and the mathemetical model of the paper, benchmark instances used to produce this paper.
 
 ## Cite
 
@@ -28,79 +23,50 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
 @article{CacheTest,
-  author =        {T. Ralphs},
+  author =        {B. Caskurlu, K. Submrani, U.U. Acikalin, A. Velasquez and P. Wojciechowski},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {{Models for test cost minimization in database migration}},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2023.0021.cd},
+  url =           {https://github.com/INFORMSJoC/2923.0021},
 }  
 ```
 
-## Description
-
-The goal of this software is to demonstrate the effect of cache optimization.
-
-## Building
-
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
-
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Table 1 in the paper shows the number of infeasible instances, average and maximum relative gaps (in
+percentages) from the optimal solution for each algorithm and each CCDM model.
 
-![Figure 1](results/mult-test.png)
+![Table 1](results/Table_1.png)
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
 
-![Figure 1](results/sum-test.png)
+Table 2 in the paper aggregates the results in Table 1 for various parameters to offer a more compact view for analyzing the performance of the heuristic algorithms with respect to the parameters of the model.
+
+![Table 2](results/Table_2.png)
+
+
+Figure 3 in the paper displays a performance plot that contrasts
+the outcomes of heuristic algorithms with their corresponding optimal solutions on an instance-
+by-instance basis.
+
+![Figure 3](results/perf_flot.png)
+
+Table 3 in the paper displays the results of a head-to-head comparison of the algorithms on all the instances. Each entry (i,j) in the table represents the percentage of instances in which algorithm i outper- formed algorithm j. For example, the last column of the first row indicates that in 6.37% of the instances, PaToH-D produced better solutions than kKaHyPar-EBQ.
+
+![Table 3](results/Table_3.png)
+
+Table 4 in the paper shows the running time of the algorithms in
+
+![Table 4](results/Table_4.png)
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
+To replicate the tables and the figure, do
 
 ```
-make mult-test
+python codes/results/results.py
 ```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+This script reads the results and produces the tables and the figures.
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
-
-## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+To run the algorithms from scratch checkout the corresponding folders inside the codes folder. After re-running the algorithms, you can use the command above to replicate the tables and the figure using the results of these new runs.
