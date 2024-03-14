@@ -12,7 +12,7 @@ cc -o benc_patoh_d benchmark_d.c   -L. -lpatoh -lm
 To run PaToH-d:
 
 ```
-cc -o benc_patoh_q benchmark_d.c   -L. -lpatoh -lm
+cc -o benc_patoh_q benchmark_q.c   -L. -lpatoh -lm
 ./benc_patoh_q
 ```
 
