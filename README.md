@@ -9,17 +9,17 @@ The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
 [Models for test cost minimization in database migration](https://doi.org/10.1287/ijoc.2019.0000) by B. Caskurlu, K. Submrani, U.U. Acikalin, A. Velasquez and P. Wojciechowski. 
 
-The repository contains implementations of adaptions of the heuristic algorithms and the mathemetical model of the paper, benchmark instances used to produce this paper.
+The repository contains implementations of adaptions of the heuristic algorithms and the ILP used in the paper as well as the benchmark instances used to produce this paper.
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2023.0021
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2023.0021.cd
 
-Below is the BibTex for citing this snapshot of the respoitory.
+Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @article{CacheTest,
@@ -28,7 +28,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
   title =         {{Models for test cost minimization in database migration}},
   year =          {2023},
   doi =           {10.1287/ijoc.2023.0021.cd},
-  url =           {https://github.com/INFORMSJoC/2923.0021},
+  url =           {https://github.com/INFORMSJoC/2023.0021},
 }  
 ```
 
@@ -50,9 +50,9 @@ Figure 3 in the paper displays a performance plot that contrasts
 the outcomes of heuristic algorithms with their corresponding optimal solutions on an instance-
 by-instance basis.
 
-![Figure 3](results/perf_flot.png)
+<img src="results/perf_plot.png" alt="Figure 3" width="600">
 
-Table 3 in the paper displays the results of a head-to-head comparison of the algorithms on all the instances. Each entry (i,j) in the table represents the percentage of instances in which algorithm i outper- formed algorithm j. For example, the last column of the first row indicates that in 6.37% of the instances, PaToH-D produced better solutions than kKaHyPar-EBQ.
+Table 3 in the paper displays the results of a head-to-head comparison of the algorithms on all the instances. Each entry (i,j) in the table represents the percentage of instances in which algorithm i outperformed algorithm j. For example, the last column of the first row indicates that in 6.37% of the instances, PaToH-D produced better solutions than kKaHyPar-EBQ.
 
 ![Table 3](results/Table_3.png)
 
@@ -69,4 +69,4 @@ python codes/results/results.py
 ```
 This script reads the results and produces the tables and the figures.
 
-To run the algorithms from scratch checkout the corresponding folders inside the codes folder. After re-running the algorithms, you can use the command above to replicate the tables and the figure using the results of these new runs.
+To run the algorithms from scratch check the corresponding folders inside the codes folder. After re-running the algorithms, you can use the command above to replicate the tables and the figure using the results of these new runs.
