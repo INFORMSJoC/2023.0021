@@ -1,0 +1,72 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 75 substitutions.
+Reduced MIP has 395 rows, 450 columns, and 1720 nonzeros.
+Reduced MIP has 450 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,69 ticks)
+Found incumbent of value 2365,000000 after 0,01 sec. (3,00 ticks)
+Probing time = 0,00 sec. (0,80 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 130 rows and 0 columns.
+MIP Presolve added 260 rows and 0 columns.
+Reduced MIP has 525 rows, 450 columns, and 1850 nonzeros.
+Reduced MIP has 450 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,48 ticks)
+Probing time = 0,00 sec. (0,76 ticks)
+Clique table members: 1210.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,01 sec. (4,50 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2365,0000        0,0000           100,00%
+*     0+    0                         1126,0000        0,0000           100,00%
+      0     0      473,0000   360     1126,0000      473,0000      275   57,99%
+      0     0      478,9404   360     1126,0000       Cuts: 7      325   57,47%
+      0     0      486,2695   360     1126,0000      Fract: 5      364   56,81%
+      0     0      490,0584   360     1126,0000       Cuts: 4      391   56,48%
+      0     0      490,4264   360     1126,0000       Cuts: 3      403   56,45%
+      0     0      490,5959   360     1126,0000       Cuts: 2      410   56,43%
+      0     0      572,8040   360     1126,0000     Cuts: 231      597   49,13%
+      0     0      579,4447   360     1126,0000     Cuts: 231      649   48,54%
+      0     0      581,4295   360     1126,0000      Cuts: 82      695   48,36%
+      0     0      582,4098   360     1126,0000      Cuts: 33      713   48,28%
+*     0+    0                         1055,0000      582,4098            44,80%
+      0     0      582,6757   360     1055,0000       Cuts: 4      723   44,77%
+      0     0      582,9093   360     1055,0000       Cuts: 7      728   44,75%
+      0     0      583,5168   360     1055,0000   ZeroHalf: 2      742   44,69%
+      0     0      583,6976   360     1055,0000   ZeroHalf: 3      750   44,67%
+      0     0      583,7883   360     1055,0000   ZeroHalf: 2      759   44,66%
+      0     0      583,9674   360     1055,0000      Cuts: 29      781   44,65%
+      0     0      583,9692   360     1055,0000   ZeroHalf: 1      783   44,65%
+      0     0      584,0131   360     1055,0000   ZeroHalf: 1      789   44,64%
+      0     2      584,0131   426     1055,0000      584,0131      789   44,64%
+Elapsed time = 0,34 sec. (200,84 ticks, tree = 0,02 MB, solutions = 3)
+*    59+   30                         1030,0000      664,9906            35,44%
+   1422   733      896,9942   260     1030,0000      754,8893    73551   26,71%
+   1774   653        cutoff           1030,0000      833,9662    64296   19,03%
+   2898  1298      996,2398   146     1030,0000      887,0878   130350   13,87%
+   4907  1839        cutoff           1030,0000      938,5049   223289    8,88%
+   6768  1241        cutoff           1030,0000      990,0673   297478    3,88%
+
+Clique cuts applied:  42
+Cover cuts applied:  539
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  144
+Zero-half cuts applied:  34
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  10
+
+Root node processing (before b&c):
+  Real time             =    0,33 sec. (200,29 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    1,77 sec. (1336,20 ticks)
+  Sync time (average)   =    0,51 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    2,10 sec. (1536,50 ticks)

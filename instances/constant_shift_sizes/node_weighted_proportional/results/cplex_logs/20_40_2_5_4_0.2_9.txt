@@ -1,0 +1,91 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 16384
+CPXPARAM_MIP_Limits_TreeMemory                   24576
+Tried aggregator 2 times.
+Aggregator did 40 substitutions.
+Reduced MIP has 184 rows, 240 columns, and 904 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,83 ticks)
+Found incumbent of value 2896,000000 after 0,00 sec. (1,65 ticks)
+Probing time = 0,00 sec. (0,30 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 32 rows and 0 columns.
+MIP Presolve added 64 rows and 0 columns.
+Reduced MIP has 216 rows, 240 columns, and 936 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,12 ticks)
+Probing time = 0,00 sec. (0,29 ticks)
+Clique table members: 604.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,67 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2896,0000        0,0000           100,00%
+*     0+    0                         1827,0000        0,0000           100,00%
+*     0+    0                         1696,0000        0,0000           100,00%
+      0     0      724,0000   142     1696,0000      724,0000       82   57,31%
+      0     0      724,0000   142     1696,0000     Cuts: 154      173   57,31%
+      0     0      724,0000   142     1696,0000     Cuts: 154      256   57,31%
+      0     0      724,0000   142     1696,0000     Cuts: 154      359   57,31%
+*     0+    0                         1636,0000      724,0000            55,75%
+*     0+    0                         1570,0000      724,0000            53,89%
+      0     2      774,5940   124     1570,0000      724,0000      400   53,89%
+Elapsed time = 0,10 sec. (37,57 ticks, tree = 0,02 MB, solutions = 5)
+   1600   935     1523,2333    13     1570,0000      820,4440     9746   47,74%
+*  2155+ 1130                         1558,0000      820,4440            47,34%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 12 rows and 11 columns.
+MIP Presolve modified 15 coefficients.
+Aggregator did 3 substitutions.
+Reduced MIP has 201 rows, 226 columns, and 866 nonzeros.
+Reduced MIP has 226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,82 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 201 rows, 226 columns, and 866 nonzeros.
+Reduced MIP has 226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,67 ticks)
+Represolve time = 0,01 sec. (4,81 ticks)
+   4873     0      851,0743   226     1558,0000       Cuts: 5    77507   35,86%
+   4873     0      857,8898   226     1558,0000      Cuts: 13    77563   35,86%
+   4873     0      867,5765   226     1558,0000      Cuts: 11    77645   35,86%
+   4873     0      874,4892   226     1558,0000      Cuts: 16    77683   35,86%
+   4873     2      874,4892   226     1558,0000      999,2371    77683   35,86%
+   5638   526     1463,3857    96     1558,0000      999,2371   103509   35,86%
+   8059  2136     1398,2134   123     1558,0000     1086,4396   186898   30,27%
+  10865  4171     1421,4536    42     1558,0000     1165,9666   303157   25,16%
+  14832  6845     1532,7107    94     1558,0000     1232,2234   428690   20,91%
+  18880  9154     1512,8213   104     1558,0000     1278,5119   542419   17,94%
+* 22454+11253                         1557,0000     1308,3796            15,97%
+  22983 11590        cutoff           1557,0000     1315,1023   671113   15,54%
+  26496 13505     1521,2444   155     1557,0000     1342,2402   808679   13,79%
+* 38126 16731      integral     0     1548,0000     1403,7917  1198689    9,32%
+  38975 16464     1515,5248   151     1548,0000     1409,0049  1289798    8,98%
+Elapsed time = 4,31 sec. (3288,37 ticks, tree = 5,68 MB, solutions = 8)
+* 39515+16509                         1544,0000     1410,2754             8,66%
+* 44905+15935                         1541,0000     1433,6128             6,97%
+  48779 14911     1523,8432   125     1541,0000     1442,2621  1653861    6,41%
+  59509 10791        cutoff           1541,0000     1493,6802  2024429    3,07%
+
+Clique cuts applied:  89
+Cover cuts applied:  493
+Mixed integer rounding cuts applied:  12
+Zero-half cuts applied:  9
+Gomory fractional cuts applied:  22
+
+Root node processing (before b&c):
+  Real time             =    0,10 sec. (37,50 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    8,87 sec. (5738,27 ticks)
+  Sync time (average)   =    2,94 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    8,97 sec. (5775,76 ticks)

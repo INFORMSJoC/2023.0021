@@ -1,0 +1,80 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 28672
+Tried aggregator 2 times.
+Aggregator did 40 substitutions.
+Reduced MIP has 184 rows, 240 columns, and 852 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,79 ticks)
+Found incumbent of value 952,000000 after 0,00 sec. (1,60 ticks)
+Probing time = 0,00 sec. (0,26 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 48 rows and 0 columns.
+MIP Presolve added 96 rows and 0 columns.
+Reduced MIP has 232 rows, 240 columns, and 900 nonzeros.
+Reduced MIP has 240 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,09 ticks)
+Probing time = 0,00 sec. (0,25 ticks)
+Clique table members: 552.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (1,04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          952,0000        0,0000           100,00%
+*     0+    0                          493,0000        0,0000           100,00%
+*     0+    0                          466,0000        0,0000           100,00%
+      0     0      238,0000   125      466,0000      238,0000      119   48,93%
+      0     0      238,0000   125      466,0000     Cuts: 158      228   48,93%
+      0     0      238,0000   125      466,0000     Cuts: 116      303   48,93%
+*     0+    0                          448,0000      238,0000            46,87%
+*     0+    0                          435,0000      238,0000            45,29%
+      0     2      263,9994   160      435,0000      245,0575      377   43,66%
+Elapsed time = 0,10 sec. (40,19 ticks, tree = 0,02 MB, solutions = 5)
+*    28+    7                          432,0000      264,2207            38,84%
+   3946  2168      412,2191   103      432,0000      370,1210    90214   14,32%
+*  4142+ 2257                          431,0000      370,9677            13,93%
+*  4153+ 2256                          423,0000      370,9677            12,30%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 17 rows and 14 columns.
+MIP Presolve added 12 rows and 0 columns.
+MIP Presolve modified 26 coefficients.
+Reduced MIP has 227 rows, 226 columns, and 820 nonzeros.
+Reduced MIP has 226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,72 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 227 rows, 226 columns, and 820 nonzeros.
+Reduced MIP has 226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,66 ticks)
+Represolve time = 0,01 sec. (6,17 ticks)
+   6347     0      280,8461   226      423,0000      Cuts: 11   178699    4,77%
+   6347     0      285,1957   226      423,0000       Cuts: 7   178760    4,77%
+   6347     0      286,1964   226      423,0000       Cuts: 4   178818    4,77%
+   6347     0      287,1245   226      423,0000       Cuts: 6   178871    4,77%
+   6347     0      287,7900   226      423,0000      Fract: 3   178911    4,77%
+   6347     2      287,7900   226      423,0000      402,8293   178911    4,77%
+   7631   685      414,5174   103      423,0000      402,8293   217432    4,77%
+  10148   977        cutoff            423,0000      402,8293   289444    4,77%
+
+Clique cuts applied:  41
+Cover cuts applied:  361
+Mixed integer rounding cuts applied:  10
+Zero-half cuts applied:  7
+Lift and project cuts applied:  3
+Gomory fractional cuts applied:  20
+
+Root node processing (before b&c):
+  Real time             =    0,09 sec. (40,08 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    1,53 sec. (1117,71 ticks)
+  Sync time (average)   =    0,45 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    1,63 sec. (1157,79 ticks)

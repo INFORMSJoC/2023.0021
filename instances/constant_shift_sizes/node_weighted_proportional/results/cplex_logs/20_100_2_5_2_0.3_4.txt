@@ -1,0 +1,58 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 16384
+CPXPARAM_MIP_Limits_TreeMemory                   24576
+Tried aggregator 2 times.
+MIP Presolve eliminated 50 rows and 0 columns.
+MIP Presolve added 100 rows and 0 columns.
+Aggregator did 120 substitutions.
+Reduced MIP has 252 rows, 220 columns, and 994 nonzeros.
+Reduced MIP has 220 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,35 ticks)
+Found incumbent of value 2609,000000 after 0,00 sec. (2,64 ticks)
+Probing time = 0,00 sec. (1,56 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 252 rows, 220 columns, and 994 nonzeros.
+Reduced MIP has 220 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,81 ticks)
+Probing time = 0,00 sec. (1,54 ticks)
+Clique table members: 767.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2609,0000        0,0000           100,00%
+      0     0     1492,0000   218     2609,0000     1492,0000       92   42,81%
+      0     0     1501,6802   218     2609,0000     Cuts: 163      149   42,44%
+*     0+    0                         2464,0000     1501,6802            39,06%
+      0     0     1523,1487   218     2464,0000     Cuts: 163      197   38,18%
+      0     0     1524,8096   218     2464,0000     Cuts: 163      223   38,12%
+      0     0     1524,8435   218     2464,0000     Cuts: 163      227   38,12%
+      0     0     1524,9381   218     2464,0000      Cuts: 32      234   38,11%
+Detecting symmetries...
+      0     0     1524,9810   218     2464,0000       Cuts: 9      238   38,11%
+*     0+    0                         2421,0000     1524,9810            37,01%
+*     0+    0                         2372,0000     1524,9810            35,71%
+Detecting symmetries...
+      0     2     1524,9810   218     2372,0000     1608,1667      238   32,20%
+Elapsed time = 0,17 sec. (73,02 ticks, tree = 0,02 MB, solutions = 4)
+
+Clique cuts applied:  49
+Cover cuts applied:  295
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  32
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  21
+
+Root node processing (before b&c):
+  Real time             =    0,16 sec. (72,78 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0,37 sec. (128,29 ticks)
+  Sync time (average)   =    0,23 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,52 sec. (201,07 ticks)

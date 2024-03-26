@@ -1,0 +1,72 @@
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_WorkMem                                 16384
+CPXPARAM_MIP_Limits_TreeMemory                   24576
+Tried aggregator 2 times.
+Aggregator did 30 substitutions.
+Reduced MIP has 108 rows, 135 columns, and 504 nonzeros.
+Reduced MIP has 135 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,47 ticks)
+Found incumbent of value 324,000000 after 0,00 sec. (0,81 ticks)
+Probing time = 0,00 sec. (0,15 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 21 rows and 0 columns.
+MIP Presolve added 42 rows and 0 columns.
+Reduced MIP has 129 rows, 135 columns, and 525 nonzeros.
+Reduced MIP has 135 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,62 ticks)
+Probing time = 0,00 sec. (0,15 ticks)
+Clique table members: 339.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0,00 sec. (0,36 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          324,0000        0,0000           100,00%
+*     0+    0                          276,0000        0,0000           100,00%
+*     0+    0                          261,0000        0,0000           100,00%
+      0     0      108,0000    90      261,0000      108,0000       48   58,62%
+*     0+    0                          235,0000      108,0000            54,04%
+      0     0      108,0000    90      235,0000      Cuts: 99      113   54,04%
+      0     0      110,0082    90      235,0000     Cuts: 126      177   53,19%
+      0     0      110,8333    90      235,0000     Cuts: 132      202   52,84%
+      0     0      111,2835    90      235,0000      Cuts: 81      247   52,65%
+      0     0      111,6879    90      235,0000      Cuts: 94      279   52,47%
+      0     0      132,4915    90      235,0000     Cuts: 132      454   43,62%
+      0     0      133,8011    90      235,0000     Cuts: 111      493   43,06%
+      0     0      134,4929    90      235,0000      Cuts: 16      514   42,77%
+      0     0      134,7143    90      235,0000      Cuts: 33      538   42,67%
+      0     0      135,4167    90      235,0000   ZeroHalf: 5      565   42,38%
+      0     0      135,6259    90      235,0000      Cuts: 48      579   42,29%
+      0     0      136,1044    90      235,0000       Cuts: 7      609   42,08%
+      0     0      136,2873    90      235,0000      Cuts: 56      638   42,01%
+      0     0      136,6600    90      235,0000   ZeroHalf: 4      669   41,85%
+      0     0      136,9003    90      235,0000      Cuts: 55      694   41,74%
+      0     0      136,9491    90      235,0000      Cuts: 19      708   41,72%
+      0     0      136,9689    90      235,0000       Cuts: 8      719   41,72%
+*     0+    0                          232,0000      136,9689            40,96%
+*     0+    0                          231,0000      136,9689            40,71%
+      0     2      136,9689   123      231,0000      136,9689      719   40,71%
+Elapsed time = 0,25 sec. (103,98 ticks, tree = 0,02 MB, solutions = 6)
+*    56+   10                          226,0000      137,0202            39,37%
+*  1032+   25                          225,0000      153,7039            31,69%
+*  1307+   37                          219,0000      153,7039            29,82%
+
+Clique cuts applied:  49
+Cover cuts applied:  87
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  48
+Zero-half cuts applied:  15
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0,24 sec. (103,78 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0,09 sec. (39,12 ticks)
+  Sync time (average)   =    0,05 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,34 sec. (142,91 ticks)
